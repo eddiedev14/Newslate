@@ -21,27 +21,217 @@
         <header class="header">
             <nav class="nav">
                 <div class="nav__logo">
-                    <figure class="nav__logo__figure">
-                        <img src="/assets/logo/Newslate Logo.png" alt="Newslate Home">
-                    </figure>
-                    <h3 class="nav__logo__title">NEW<strong>SLATE</strong></h3>
+                    <a href="index.html">
+                        <figure class="nav__logo__figure">
+                            <img src="/assets/logo/Newslate Logo.png" alt="Newslate Home">
+                        </figure>
+                        <h3 class="nav__logo__title">NEW<strong>SLATE</strong></h3>
+                    </a>
                 </div>
                 <ul class="nav__links">
-                    <li class="nav__links__item"><a href="#hero">Inicio</a></li>
-                    <li class="nav__links__item"><a href="#featured">Blog</a></li>
-                    <li class="nav__links__item"><a href="#contact">Contacto</a></li>
+                    <li class="nav__links__item"><a href="#hero" tabindex="-1">Inicio</a></li>
+                    <li class="nav__links__item"><a href="#featured" tabindex="-1">Blog</a></li>
+                    <li class="nav__links__item"><a href="#contact" tabindex="-1">Contacto</a></li>
                 </ul>
-                <form action="#" class="nav__form">
-                    <input type="search" name="search" id="search" class="nav__form__field" placeholder="Buscar">
+                <form action="#" class="nav__form" method="post">
+                    <input type="text" name="search" id="search" class="nav__form__field" placeholder="Buscar">
                     <ion-icon name="search"></ion-icon>
                 </form>
                 <div class="nav__group">
-                    <ion-icon name="search" class="search-icon"></ion-icon>
-                    <ion-icon name="menu" class="menu-icon"></ion-icon>
+                    <button class="search-icon"><ion-icon name="search"></ion-icon></button>
+                    <button class="menu-icon"><ion-icon name="menu"></ion-icon></button>
                 </div>
             </nav>
+
+            <section class="hero">
+                <div class="hero__content">
+                    <h1 class="hero__title">EXPLORA LA ESENCIA DE LA HISTORIA</h1>
+                    <p class="hero__paragraph">Conéctate con el pasado, comprende el presente, imagina el futuro.</p>
+                    <a href="#" class="hero__cta">Inicia tu Recorrido</a>
+                </div>
+            </section>
         </header>
+
+        <main class="post" id="featured">
+            <div class="post__description">
+                <div class="post__description__info">
+                    <h2 class="post__description__info__title">Artículos Destacados</h2>
+                    <p class="post__description__info__paragraph">Descubre artículos destacados que exploran las raíces de nuestra historia, la riqueza de las culturas y los relatos que han dado forma al mundo.</p>
+                </div>
+                <a href="#" class="post__description__cta">Ver Todos <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <section class="post__list">
+                <article class="post__list__item">
+                    <header class="post__list__item__tag">
+                        <span class="post__list__item__tag__span">DESTACADO</span>
+                    </header>
+                    <main class="post__list__item__content">
+                        <h3 class="post__lists__item__content__title"><a href="index.html">Título del Artículo de Humanidades</a></h3>
+                    </main>
+                    <footer class="post__list__item__footer">
+                        <div class="post__list__item__footer__user">
+                            <figure class="post__list__item__footer__user__figure">
+                                <img src="/assets/users/Eddie.jpg" alt="Eddie Santiago Delgado Campo">
+                            </figure>
+                            <div class="post__list__item__footer__user__info">
+                                <h4 class="post__list__item__footer__user__info__name">Eddie Delgado</h4>
+                                <p class="post__list__item__footer__user__info__insight"><ion-icon name="checkmark-circle"></ion-icon> <em>Escritor Verificado</em></p>
+                            </div>
+                        </div>
+                        <div class="post__list__item__footer__date">
+                            <time datetime="2024-02-16">16 Feb.</time>
+                        </div>
+                    </footer>
+                </article>
+                <article class="post__list__item">
+                    <header class="post__list__item__tag">
+                        <span class="post__list__item__tag__span">DESTACADO</span>
+                    </header>
+                    <main class="post__list__item__content">
+                        <h3 class="post__lists__item__content__title"><a href="index.html">Desafiando las Sombras de la Discriminación</a></h3>
+                    </main>
+                    <footer class="post__list__item__footer">
+                        <div class="post__list__item__footer__user">
+                            <figure class="post__list__item__footer__user__figure">
+                                <img src="/assets/users/Carlos.jpg" alt="Carlos Idarraga">
+                            </figure>
+                            <div class="post__list__item__footer__user__info">
+                                <h4 class="post__list__item__footer__user__info__name">Carlos Idarraga</h4>
+                                <p class="post__list__item__footer__user__info__insight"><ion-icon name="checkmark-circle"></ion-icon> <em>Escritor Verificado</em></p>
+                            </div>
+                        </div>
+                        <div class="post__list__item__footer__date">
+                            <time datetime="2024-02-10">10 Feb.</time>
+                        </div>
+                    </footer>
+                </article>
+            </section>
+        </main>
+
+        <section class="post" id="recent">
+            <div class="post__description">
+                <div class="post__description__info">
+                    <h2 class="post__description__info__title">Artículos Recientes</h2>
+                    <p class="post__description__info__paragraph">Explora lo último en nuestra sección de Artículos Recientes. Sumérgete en la diversidad de las humanidades con nuestras lecturas más recientes.</p>
+                </div>
+                <a href="#" class="post__description__cta">Ver Todos <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <section class="post__list post__three">
+                <article class="post__list__item post__list__item__description">
+                    <main class="post__list__item__content">
+                        <h3 class="post__lists__item__content__title"><a href="index.html">El Estado Moderno</a></h3>
+                        <p class="post__lists__item__content__paragraph">Explora la evolución del estado a lo largo del tiempo y sus desafíos</p>
+                    </main>
+                    <footer class="post__list__item__footer">
+                        <div class="post__list__item__footer__user">
+                            <figure class="post__list__item__footer__user__figure">
+                                <img src="/assets/users/Lina.jpg" alt="Lina Holguín">
+                            </figure>
+                            <div class="post__list__item__footer__user__info">
+                                <h4 class="post__list__item__footer__user__info__name">Lina Holguín</h4>
+                                <p class="post__list__item__footer__user__info__insight"><ion-icon name="checkmark-circle"></ion-icon> <em>Escritor Verificado</em></p>
+                            </div>
+                        </div>
+                        <div class="post__list__item__footer__date">
+                            <time datetime="2024-01-09">09 Ene.</time>
+                        </div>
+                    </footer>
+                </article>
+                <article class="post__list__item post__list__item__description">
+                    <main class="post__list__item__content">
+                        <h3 class="post__lists__item__content__title"><a href="index.html">Democracia Web</a></h3>
+                        <p class="post__lists__item__content__paragraph">Adéntrate en el mundo de la política digital (Redes Sociales)</p>
+                    </main>
+                    <footer class="post__list__item__footer">
+                        <div class="post__list__item__footer__user">
+                            <figure class="post__list__item__footer__user__figure">
+                                <img src="/assets/users/Ulises.jpg" alt="Ulises Torres">
+                            </figure>
+                            <div class="post__list__item__footer__user__info">
+                                <h4 class="post__list__item__footer__user__info__name">Ulises Torres</h4>
+                                <p class="post__list__item__footer__user__info__insight"><ion-icon name="checkmark-circle"></ion-icon> <em>Escritor Verificado</em></p>
+                            </div>
+                        </div>
+                        <div class="post__list__item__footer__date">
+                            <time datetime="2024-01-09">10 Feb.</time>
+                        </div>
+                    </footer>
+                </article>
+                <article class="post__list__item post__list__item__description">
+                    <main class="post__list__item__content">
+                        <h3 class="post__lists__item__content__title"><a href="index.html">Mujeres Pioneras</a></h3>
+                        <p class="post__lists__item__content__paragraph">Celebra las contribuciones impactantes de mujeres a lo largo de la historia</p>
+                    </main>
+                    <footer class="post__list__item__footer">
+                        <div class="post__list__item__footer__user">
+                            <figure class="post__list__item__footer__user__figure">
+                                <img src="/assets/users/Karolina.jpg" alt="Karolina Castro">
+                            </figure>
+                            <div class="post__list__item__footer__user__info">
+                                <h4 class="post__list__item__footer__user__info__name">Karolina Castro</h4>
+                                <p class="post__list__item__footer__user__info__insight"><ion-icon name="checkmark-circle"></ion-icon> <em>Escritor Verificado</em></p>
+                            </div>
+                        </div>
+                        <div class="post__list__item__footer__date">
+                            <time datetime="2024-02-05">05 Ene.</time>
+                        </div>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact__left">
+                <h2 class="contact__left__title">Suscribete Ahora</h2>
+                <p class="contact__left__paragraph">¡No te pierdas las últimas noticias y análisis impactantes! Suscríbete a nuestro boletín informativo para recibir actualizaciones exclusivas.</p>
+                <form action="https://formspree.io/f/meqyakyn" class="contact__left__form" method="post">
+                    <input type="text" id="name" name="name" placeholder="Nombre *" required autocomplete="name" class="contact__left__form__input">
+                    <input type="email" id="email" name="email" placeholder="Correo Electrónico" required autocomplete="email" class="contact__left__form__input">
+                    <select name="medium" id="medium" class="contact__left__form__input" required>
+                        <option value="" selected>¿Cómo nos encontraste?</option>
+                        <hr>
+                        <option value="Youtube">Youtube</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Google">Google</option>
+                        <option value="Tik Tok">Tik Tok</option>
+                        <option value="Recomendación">Recomendación</option>
+                    </select>
+                    <button type="submit" class="contact__left__form__submit">SUSCRIBIRME</button>
+                </form>
+                <div class="contact__left__contact">
+                    <div class="contact__left__contact__item">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <div class="contact__left__contact__item__text">
+                            <h5 class="contact__left__contact__item__text__title">CELULAR</h5>
+                            <address class="contact__left__contact__item__text__info">318 5552604</address>
+                        </div>
+                    </div>
+                    <div class="contact__left__contact__item">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <div class="contact__left__contact__item__text">
+                            <h5 class="contact__left__contact__item__text__title">EMAIL</h5>
+                            <address class="contact__left__contact__item__text__info">newslate@gmail.com</address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__right"></div>
+        </section>
     </div>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <h5 class="footer__left__title">New<strong>slate</strong></h5>
+            <p class="footer__left__copyright">&copy; Eddie Santiago Delgado 2024.</p>
+        </div>
+        <div class="footer__right">
+            <ul class="footer__right__list">
+                <li class="footer__right__list__item"><a href="#">Términos de Uso</a></li>
+                <li class="footer__right__list__item"><a href="#">Política de Privacidad</a></li>
+                <li class="footer__right__list__item"><a href="#">Políticas de Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/main.js"></script>
