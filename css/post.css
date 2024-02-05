@@ -1,0 +1,234 @@
+:root{
+    --title-font: 'Satoshi', sans-serif;
+    --text-font: 'General Sans', sans-serif;
+
+    --primary-color: #4B6BFB;
+    --black-title: #232536;
+    --gray-text: #6D6E76;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--text-font);
+}
+
+h1, h2, h3, h4, h5, h6, a{
+    font-family: var(--title-font);
+}
+
+ion-icon{
+    transition: z-index .5s ease-in-out;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 700px;
+    padding: 110px 28px 0px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    width: 100%;
+    max-width: 700px;
+    height: 90px;
+    padding: 32px 28px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.nav__logo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav__logo__figure, .nav__logo__figure img{
+    width: 33px;
+    height: 33px;
+}
+
+.nav__logo__title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav__logo__title strong{
+    font-weight: 900;
+}
+
+.nav__links, .nav__form{
+    display: none;
+}
+
+.nav__group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav__group label{
+    height: 28px;
+}
+
+.nav__group ion-icon{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.nav__group .menu-icon{
+    z-index: 99;
+}
+
+.nav__group .menu-icon.light{
+    background-color: #000;
+    color: #fff;
+}
+
+.nav__links {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0px;
+    z-index: 99;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav__links.active {
+    transform: translateX(0);
+}
+
+.nav__links .nav__links__item a{
+    display: inline-block;
+    width: 150px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 30px;
+    border-left: 1px solid #fff;
+    transition: .3s all;
+    text-align: center;
+}
+
+.nav__links .nav__links__item a:hover, .nav__links .nav__links__item a:focus{
+    background-color: #fff;
+    color: #000;
+}
+
+.search-icon, .menu-icon{
+    background-color: #fff;
+    border: none;
+}
+
+/* Hero */
+
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hero__content__category{
+    font-family: var(--title-font);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--black-title);
+}
+
+.hero__content__title{
+    font-size: 28px;
+    line-height: 38px;
+    margin: 25px 0px 18px 0px;
+    color: var(--black-title);
+}
+
+.hero__content__paragraph{
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 25px;
+    color: var(--gray-text);
+}
+
+.hero__content__cta{
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.hero__content__cta:hover, .hero__content__cta:focus{
+    background-color: #4461e0;
+    transform: scale(1.03);
+}
+
+.hero__picture{
+    width: 100%;
+    height: 300px;
+    background: url("/assets/img/banner-post.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    .nav{
+        left: 50%;
+        margin-left: -350px;
+    }
+}

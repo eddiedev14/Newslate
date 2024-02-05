@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Newslate - Post</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&f[]=general-sans@300,401,400&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/post.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <a href="index.html">
+                        <figure class="nav__logo__figure">
+                            <img src="/assets/logo/Newslate Logo.png" alt="Newslate Home">
+                        </figure>
+                        <h3 class="nav__logo__title">NEW<strong>SLATE</strong></h3>
+                    </a>
+                </div>
+                <ul class="nav__links">
+                    <li class="nav__links__item"><a href="#hero" tabindex="-1">Inicio</a></li>
+                    <li class="nav__links__item"><a href="#featured" tabindex="-1">Blog</a></li>
+                    <li class="nav__links__item"><a href="#contact" tabindex="-1">Contacto</a></li>
+                </ul>
+                <form action="#" class="nav__form" method="post">
+                    <input type="text" name="search" id="search" class="nav__form__field" placeholder="Buscar">
+                    <ion-icon name="search"></ion-icon>
+                </form>
+                <div class="nav__group">
+                    <button class="search-icon"><ion-icon name="search"></ion-icon></button>
+                    <button class="menu-icon"><ion-icon name="menu"></ion-icon></button>
+                </div>
+            </nav>
+
+            <section class="hero">
+                <div class="hero__content">
+                    <span class="hero__content__category">HUMANIDADES</span>
+                    <h1 class="hero__content__title">Título del Artículo de Humanidades</h1>
+                    <p class="hero__content__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    <a href="#" class="hero__content__cta">Navega el Artículo <ion-icon name="arrow-forward"></ion-icon></a>
+                </div>
+                <div class="hero__picture"></div>
+            </section>
+        </header>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
