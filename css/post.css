@@ -3,6 +3,8 @@
     --text-font: 'General Sans', sans-serif;
 
     --primary-color: #4B6BFB;
+    --light-primary-color: #deebff;
+    --pale-primary-color: #edf4ff;
     --black-title: #232536;
     --gray-text: #6D6E76;
 }
@@ -23,10 +25,12 @@ body{
     align-items: center;
     justify-content: center;
     font-family: var(--text-font);
+    color: var(--gray-text);
 }
 
 h1, h2, h3, h4, h5, h6, a{
     font-family: var(--title-font);
+    color: var(--black-title);
 }
 
 ion-icon{
@@ -185,14 +189,12 @@ ion-icon{
     font-size: 28px;
     line-height: 38px;
     margin: 25px 0px 18px 0px;
-    color: var(--black-title);
 }
 
 .hero__content__paragraph{
     font-size: 14px;
     line-height: 28px;
     margin-bottom: 25px;
-    color: var(--gray-text);
 }
 
 .hero__content__cta{
@@ -231,4 +233,76 @@ ion-icon{
         left: 50%;
         margin-left: -350px;
     }
+}
+
+/* Post */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.article__section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article__section__title{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.article__section__paragraph{
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.article__section__details{
+    background-color: var(--pale-primary-color);
+    border-radius: 5px;
+    border-end-end-radius: 5px;
+    border-end-start-radius: 5px;
+}
+
+.article__section__details__title{
+    padding: 10px 15px;
+    background-color: var(--light-primary-color);
+    border-start-end-radius: 5px;
+    border-start-start-radius: 5px;
+    font-size: 16px;
+    color: var(--black-title);
+    cursor: pointer;
+}
+
+.article__section__details__index{
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+.article__section__details__index__item a{
+    font-size: 14px;
+    text-decoration: underline;
+    color: var(--gray-text);
+}
+
+.article__section__details__index__item.subitem{
+    padding-left: 15px;
+}
+
+.article__section__details__index__item.third__item{
+    padding-left: 30px;
 }
