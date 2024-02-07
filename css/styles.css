@@ -43,7 +43,10 @@ ion-icon{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+}
+
+.post, .contact{
+    padding-top: 90px;
 }
 
 .header{
@@ -430,6 +433,7 @@ ion-icon{
 
 .contact{
     padding: 42px 20px;
+    padding-top: 90px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -592,7 +596,10 @@ ion-icon{
     .wrapper{
         max-width: 1200px;
         padding: 110px 118px 0px 118px;
-        gap: 130px;
+    }
+
+    .post, .contact{
+        padding-top: 130px;
     }
 
     .nav{
@@ -750,7 +757,7 @@ ion-icon{
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
-        padding: 0px 0px 0px 40px;
+        padding-left: 40px;
     }
 
     .contact__left{

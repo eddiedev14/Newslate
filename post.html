@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="hero">
             <nav class="nav">
                 <div class="nav__logo">
                     <a href="index.html">
@@ -49,13 +49,13 @@
                     <span class="hero__content__category">HUMANIDADES</span>
                     <h1 class="hero__content__title">Título del Artículo de Humanidades</h1>
                     <p class="hero__content__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                    <a href="#" class="hero__content__cta">Navega el Artículo <ion-icon name="arrow-forward"></ion-icon></a>
+                    <a href="#post" class="hero__content__cta">Navega el Artículo <ion-icon name="arrow-forward"></ion-icon></a>
                 </div>
                 <div class="hero__picture"></div>
             </section>
         </header>
 
-        <main class="main">
+        <main class="main" id="post">
             <article class="article">
                 <section class="article__section">
                     <h2 class="article__section__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
@@ -136,7 +136,27 @@
                 </div>
             </aside>
         </main>
+
+        <section class="join">
+            <h2 class="join__title">Únete para dejar tu huella en la historia</h2>
+            <p class="join__paragraph">Únete a nuestro servicio de blog y publica tus propios artículos con todas las herramientas que disponemos. Será un placer mostrar tus conocimientos.</p>
+            <a href="#" class="join__cta">Unirse Ahora</a>
+        </section>
     </div>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <h5 class="footer__left__title">New<strong>slate</strong></h5>
+            <p class="footer__left__copyright">&copy; Eddie Santiago Delgado 2024.</p>
+        </div>
+        <div class="footer__right">
+            <ul class="footer__right__list">
+                <li class="footer__right__list__item"><a href="#">Términos de Uso</a></li>
+                <li class="footer__right__list__item"><a href="#">Política de Privacidad</a></li>
+                <li class="footer__right__list__item"><a href="#">Políticas de Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/main.js"></script>
