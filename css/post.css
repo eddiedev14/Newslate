@@ -324,8 +324,215 @@ ion-icon{
     padding-left: 30px;
 }
 
+.article__section__figure{
+    margin: 20px 0px;
+}
+
+.article__section__figure img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(15, 24, 44, 0.15);
+}
+
+.article__section__cite{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin: 30px 0px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article__section__cite__picture{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+}
+
+.article__section__cite__picture#hall{
+    background-image: url("/assets/cites/Stuart\ Hall.jpg");
+}
+
+.article__section__cite__picture#uao{
+    background-image: url("/assets/cites/UAO.jpg");
+}
+
+.article__section__cite__picture#distincion{
+    background-image: url("/assets/cites/Cultura\ y\ Naturaleza.jpg");
+}
+
+.article__section__cite__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+    padding: 24px;
+}
+
+.article__section__cite__content__span{
+    font-size: 13px;
+    padding: 4px 16px;
+    width: 138px;
+    background-color: #EC5C2E;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.article__section__cite__content__cite{
+    font-size: 14px;
+    line-height: 20px;
+    font-style: italic;
+}
+
+.article__section__cite__content__reference{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.article__section__cards{
+    margin: 30px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.article__section__cards__item{
+    width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article__section__cards__item__figure{
+    width: 100%;
+    height: 180px;
+}
+
+.article__section__cards__item__figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.article__section__cards__item__figure__content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 5px;
+}
+
+.article__section__cards__item__figure__content__title{
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.article__section__cards__item__figure__content__paragraph{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.article__section__layout{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0px;
+}
+
+.article__section__layout__figure{
+    width: calc(100% - 200px);
+    height: 500px;
+    cursor: pointer;
+    transition: width .3s ease-in-out;
+}
+
+.article__section__layout.two-columns .article__section__layout__figure{
+    width: calc(100% - 100px);
+}
+
+.article__section__layout__figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article__section__layout__figure:hover{
+    width: calc(100% - 150px);
+    height: 500px;
+    cursor: pointer;
+    transition: width .5s ease-in-out;
+}
+
+.article__section__layout.two-columns .article__section__layout__figure:hover{
+    width: calc(100%);
+}
+
+.article__section__collage{
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin: 30px 0px;
+    display: grid;
+    grid-template-areas: "top top top"
+                         "left middle right"
+                         "bottom bottom bottom";
+    gap: 8px;
+    cursor: pointer;
+    transition: .5s transform ease-in-out;
+}
+
+.article__section__collage:hover{
+    transform: scale(1.02);
+}
+
+.article__section__collage > div{
+    background-position: center;
+    background-size: cover;
+}
+
+.article__section__collage__top{
+    grid-area: top;
+    background-image: url("/assets/img/Afro\ Collage\ Top.jpg");
+}
+
+.article__section__middle__left{
+    grid-area: left;
+    background-image: url("/assets/img/Misak\ Collage\ Left.jpeg");
+}
+
+.article__section__middle__center{
+    grid-area: middle;
+    background-image: url("/assets/img/Cultura\ Collage\ Middle.jpg");
+}
+
+.article__section__middle__right{
+    grid-area: right;
+    background-image: url("/assets/img/Afro\ Collage\ Right.jpg");
+}
+
+.article__section__collage__bottom{
+    grid-area: bottom;
+    background-image: url("/assets/img/Indigena\ Collage\ Bottom.jpg");
+}
+
 .sidebar{
     width: 100%;
+}
+
+.sidebar__inner{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -542,6 +749,32 @@ ion-icon{
     font-size: 14px;
 }
 
+@media screen and (min-width: 550px) {
+    .article__section__cite{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .article__section__cite__picture{
+        border-radius: 0px;
+        border-start-start-radius: 8px;
+        border-end-start-radius: 8px;
+    }
+    
+    .article__section__cite__content__span{
+        font-size: 14px;
+        width: 145px;
+    }
+    
+    .article__section__cite__content__cite{
+        font-size: 15px;
+    }
+    
+    .article__section__cite__content__reference{
+        font-size: 15px;
+    }
+}
+
 @media screen and (min-width: 700px) {
     .nav{
         left: 50%;
@@ -627,7 +860,7 @@ ion-icon{
     .hero__content{
         order: 1;
         width: 575px;
-        padding: 40px;
+        padding: 35px;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -646,6 +879,7 @@ ion-icon{
     
     .hero__content__paragraph{
         font-size: 16px;
+        text-align: justify;
     }
     
     .hero__content__cta{
@@ -703,6 +937,16 @@ ion-icon{
     
     .article__section__details__index__item a{
         font-size: 16px;
+    }
+
+    .article__section__cards__item__figure__content__title{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    .article__section__cards__item__figure__content__paragraph{
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .profile{
