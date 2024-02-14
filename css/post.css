@@ -38,6 +38,11 @@ ion-icon{
     transition: z-index .5s ease-in-out;
 }
 
+.video{
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
 .wrapper{
     width: 100%;
     max-width: 700px;
@@ -280,7 +285,8 @@ ion-icon{
 
 .article__section__paragraph{
     font-size: 14px;
-    line-height: 28px;
+    line-height: 36px;
+    text-indent: 1.27cm;
     text-align: justify;
 }
 
@@ -363,6 +369,14 @@ ion-icon{
     background-image: url("/assets/cites/Cultura\ y\ Naturaleza.jpg");
 }
 
+.article__section__cite__picture#ritosAfricanos{
+    background-image: url("/assets/cites/Rituales\ Africanos.jpeg");
+}
+
+.article__section__cite__picture#estereotipos{
+    background-image: url("/assets/cites/Estereotipos.jpg");
+}
+
 .article__section__cite__content{
     display: flex;
     flex-direction: column;
@@ -372,7 +386,7 @@ ion-icon{
     padding: 24px;
 }
 
-.article__section__cite__content__span{
+.article__section__cite__content__span, .article__section__slider__card__content__span{
     font-size: 13px;
     padding: 4px 16px;
     width: 138px;
@@ -384,7 +398,7 @@ ion-icon{
 
 .article__section__cite__content__cite{
     font-size: 14px;
-    line-height: 20px;
+    line-height: 30px;
     font-style: italic;
 }
 
@@ -526,6 +540,126 @@ ion-icon{
 .article__section__collage__bottom{
     grid-area: bottom;
     background-image: url("/assets/img/Indigena\ Collage\ Bottom.jpg");
+}
+
+/* Slider */
+
+.swiper{
+    width: 100%;
+    height: 560px;
+    margin: 30px 0px;
+}
+
+.swiper-wrapper{
+    width: 300px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    background-color: #F5F6F8;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: auto;
+    bottom: 1px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    transition: all .3s;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    font-size: 16px;
+    color: #5F5F5F;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.swiper-button-prev:hover::after, .swiper-button-next:hover::after{
+    color: var(--primary-color);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color) !important;
+}
+
+.article__section__slider__card{
+    width: 300px;
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("/assets/img/Hombre con Canasta.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.article__section__slider__card:nth-child(2){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("/assets/img/Rito\ Iniciación\ Femenina\ Misak.jpg");
+}
+
+.article__section__slider__card:nth-child(3){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("/assets/img/Taita.jpg");
+}
+
+.article__section__slider__card:nth-child(4){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("/assets/img/Urna\ Quimbaya.jpg");
+}
+
+.article__section__slider__card:nth-child(5){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("/assets/img/Retablo\ Quimbaya.jpg");
+}
+
+.article__section__slider__card:nth-child(6){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("/assets/img/Solsticio.jpg");
+}
+
+.article__section__slider__card__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    padding: 24px;
+    color: #fff;
+}
+
+.article__section__slider__card__content__span{
+    width: 100px;
+}
+
+.article__section__slider__card__content__title{
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.article__section__slider__card__content__paragraph{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.article__section__references{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.article__section__references__item{
+    text-align: justify;
+    line-height: 36px;
+    font-size: 14px;
+    text-indent: -1.27cm;
+    padding-left: 1.27cm;
+}
+
+.article__section__references__item a{
+    word-break: break-all;
 }
 
 .sidebar{
@@ -947,6 +1081,10 @@ ion-icon{
     .article__section__cards__item__figure__content__paragraph{
         font-size: 16px;
         line-height: 20px;
+    }
+
+    .article__section__references__item{
+        font-size: 16px;
     }
 
     .profile{
